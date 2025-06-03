@@ -1,0 +1,30 @@
+.meus-ingressos {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .meus-ingressos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .ingresso-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .ingresso-card h3 {
+    margin: 0 0 10px;
+    color: #ff8c00;
+  }
+  
+  .ingresso-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  

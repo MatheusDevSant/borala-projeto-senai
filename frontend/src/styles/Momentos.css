@@ -1,0 +1,58 @@
+.momentos-vivi {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .momentos-vivi h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .momento-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .momento-card h3 {
+    margin: 0 0 10px;
+    color: #0077cc;
+  }
+  
+  .momento-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .momentos-vivi {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .chart-box {
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  .momentos-lista {
+    margin-top: 30px;
+  }
+  
+  .momento-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .momento-card h4 {
+    margin-bottom: 10px;
+    color: #ff8c00;
+  }
+  

@@ -1,0 +1,69 @@
+.barra-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: white;
+    padding: 10px 20px;
+    width:100%;
+    z-index:10;
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  
+  .barra-nav .logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .barra-nav .menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .barra-nav .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .barra-nav .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo img {
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .barra-nav.home-style {
+    background: transparent;
+    color: white;
+  }
+  
+  .barra-nav.outra-pagina-style {
+    background: white;
+    color: black;
+  }
+  
+  .barra-nav.outra-pagina-style a {
+    color: black;
+  }
+  
+  .barra-nav.home-style a {
+    color: white;
+  }
+
+  .link-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+  }
+  

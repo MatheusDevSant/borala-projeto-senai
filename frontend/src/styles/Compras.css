@@ -1,0 +1,53 @@
+.compra-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .compra-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .compra-container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .compra-container p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  
+  .compra-container button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .compra-container button:hover {
+    background-color: #e67e00;
+  }
+  
+  .select-ingresso {
+    margin: 20px 0;
+  }
+  
+  .select-ingresso select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,120 @@
+/* Resetando margens e padding para garantir consistência */
+* {
+  margin: 10;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+/* Corpo do body */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9; /* Cor de fundo suave */
+  color: #333;
+}
+
+/* Estilos da seção "Sobre Nós" */
+.sobre-nos-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  background-image: url('../images/TEATRO.png'); /* Imagem de fundo */
+  background-size: cover; /* Cobrir toda a área */
+  background-position: center; /* Centralizar a imagem */
+  padding: 40px 20px;
+  color: white;
+  width: 100%;
+  height: 60vh; /* Definindo altura para manter o layout agradável */
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .sobre-nos-features {
+    height: 50vh; /* Ajuste para telas menores */
+    padding: 20px; /* Reduzindo o padding em telas pequenas */
+  }
+}
+
+/* Ajustes dos itens dentro da seção */
+.feature {
+  flex: 1 1 30%; /* Cada item ocupa 30% da largura disponível */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  border-radius: 8px;
+  padding: 40px 30px;
+  margin: 20px; /* Espaçamento entre os itens */
+  transition: transform 0.3s ease-in-out; /* Suaviza a transformação */
+}
+
+.feature:hover {
+  transform: scale(1.05); /* Aumenta o item quando o mouse passa sobre ele */
+}
+
+.feature svg {
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.6rem; /* Ajustado para ficar maior */
+  color: #ff8c00; /* Cor do título laranja */
+  font-weight: bold;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  color: #fff; /* Cor do texto */
+  margin-top: 10px;
+}
+
+/* Ajuste responsivo para garantir que os itens se ajustem */
+@media (max-width: 768px) {
+  .feature {
+    flex: 1 1 100%; /* Os itens ocupam 100% da largura em telas pequenas */
+    margin-bottom: 20px;
+  }
+}
+
+/* Rodapé da seção "Sobre Nós" */
+.sobre-nos-footer {
+  margin-top: 50px;
+  background-color: #ff8c00;
+  padding: 20px;
+  color: white;
+}
+
+.sobre-nos-footer p {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Ajuste da imagem de fundo */
+.sobre-nos-features {
+  background-image: url('../images/TEATRO.png');
+  background-size: cover;
+  background-position:initial;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+/* Estilizando o título principal da seção "Sobre Nós" */
+.sobre-nos-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.sobre-nos-header p {
+  font-size: 1.2rem;
+  margin-top: 70px;
+  color: #666;
+}
+
+/* Ajustando o tamanho do texto da descrição */
+.sobre-nos-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 60px;
+  color: #666;
+}

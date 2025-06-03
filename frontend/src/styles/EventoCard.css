@@ -1,0 +1,42 @@
+.evento-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.evento-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.evento-info {
+  padding: 16px;
+}
+
+.evento-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.evento-info p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.btn-comprar {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-comprar:hover {
+  background: #0056b3;
+}

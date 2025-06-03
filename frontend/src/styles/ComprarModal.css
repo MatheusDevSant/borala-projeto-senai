@@ -1,0 +1,88 @@
+.comprar-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.comprar-modal-content {
+  background: #fff;
+  padding: 24px 20px 20px 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+}
+
+.comprar-modal-content h2,
+.comprar-modal-content h3 {
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.comprar-modal-content p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.pagamento-opcoes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.pagamento-opcoes button {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  background: #f7f7f7;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pagamento-opcoes button.ativo,
+.pagamento-opcoes button:hover {
+  background: #28a745;
+  color: #fff;
+  border-color: #28a745;
+}
+
+.comprar-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.comprar-btn:hover {
+  background-color: #218838;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px; right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .comprar-modal-content {
+    padding: 16px 6px 12px 6px;
+    max-width: 98vw;
+  }
+}

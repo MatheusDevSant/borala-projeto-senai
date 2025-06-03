@@ -1,0 +1,58 @@
+.atualizar-dados {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding-top: 80px; /* Garante espaço da navbar */
+}
+
+.atualizar-dados h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.atualizar-dados form {
+  display: flex;
+  flex-direction: column;
+}
+
+.atualizar-dados label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+.atualizar-dados input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.atualizar-dados input:focus {
+  border-color: #ff8c00;
+  outline: none;
+}
+
+.atualizar-dados button {
+  padding: 12px;
+  background: #ff8c00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.atualizar-dados button:hover {
+  background: #e57c00;
+}

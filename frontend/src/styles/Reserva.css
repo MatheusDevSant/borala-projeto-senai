@@ -1,0 +1,78 @@
+.reserva-modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.reserva-modal-content {
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.reserva-modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.reserva-modal-content h3 {
+  color: 333;
+}
+
+.reserva-modal-content p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.reserva-modal-content input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.total {
+  background: #ffe0b2;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+
+.pagamento-opcoes button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: #e0e0e0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.reserva-modal-content button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff8c00;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+div > input[type="text"] {
+  color: black;
+}
+
+div > input::placeholder {
+  color: black;
+}
