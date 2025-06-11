@@ -53,5 +53,25 @@ router.post('/cadastrar', (req, res) => {
   });
 });
 
+// PUT atualizar usuário
+router.put('/:id', (req, res) => {
+  const { nome, email_outros, email_google, telefone, endereco, senha, foto_usuario } = req.body;
+
+  // Adicione este log para depuração:
+  console.log('Atualizando usuário:', req.params.id, { nome, email_outros, email_google, telefone, endereco, senha, foto_usuario });
+
+  conexao.query(
+    'UPDATE usuarios SET nome=?, email_outros=?, email_google=?, telefone=?, endereco=?, senha=?, foto_usuario=? WHERE id_usuario=?',
+    [nome, email_outros, email_google, telefone, endereco, senha, foto_usuario, req.params.id],
+    (erro, resultado) => {
+      if (erro) {
+        console.error('Erro ao atualizar usuário:', erro);
+        return res.status(500).json({ erro: 'Erro ao atualizar usuário' });
+      }
+      res.json({ mensagem: 'Usuário atualizado com sucesso!' });
+    }
+  );
+});
+
 module.exports = router;
 module.exports = router;

@@ -1,58 +1,100 @@
 .momentos-vivi {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', Arial, sans-serif;
   }
   
   .momentos-vivi h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
+    color: #0088FE;
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
   }
   
-  .momento-card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  .momento-card h3 {
-    margin: 0 0 10px;
-    color: #0077cc;
-  }
-  
-  .momento-card p {
-    margin: 5px 0;
-    color: #555;
-  }
-  
-  .momentos-vivi {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+  .momentos-vivi h3 {
+    color: #9932CC;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
   }
   
   .chart-box {
-    margin: 30px 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f4f7fa;
+    border-radius: 14px;
+    padding: 24px 0 12px 0;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0,136,254,0.06);
   }
   
+  .momentos-tabela-mes,
   .momentos-lista {
-    margin-top: 30px;
+    margin-top: 18px;
+    background: #f9f9fc;
+    border-radius: 12px;
+    padding: 18px 12px;
+    box-shadow: 0 1px 8px rgba(153,50,204,0.06);
   }
   
-  .momento-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 15px;
-    margin-bottom: 20px;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    font-size: 1rem;
   }
   
-  .momento-card h4 {
-    margin-bottom: 10px;
-    color: #ff8c00;
+  th, td {
+    padding: 10px 8px;
+    text-align: left;
   }
   
+  th {
+    background: #0088FE;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  tr:nth-child(even) {
+    background: #f0f6ff;
+  }
+  
+  tr:hover {
+    background: #e6f0fa;
+    transition: background 0.2s;
+  }
+  
+  td {
+    color: #333;
+  }
+  
+  @media (max-width: 800px) {
+    .momentos-vivi {
+      padding: 12px 2vw;
+    }
+    .chart-box, .momentos-tabela-mes, .momentos-lista {
+      padding: 10px 2vw;
+    }
+    table, th, td {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .momentos-vivi {
+      padding: 4px 1vw;
+    }
+    table, th, td {
+      font-size: 0.88rem;
+      padding: 7px 4px;
+    }
+  }
+

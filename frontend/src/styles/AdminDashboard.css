@@ -1,0 +1,156 @@
+.admin-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+}
+
+.admin-cards {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.admin-card {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 28px 36px;
+  box-shadow: 0 2px 12px #0001;
+  text-align: center;
+  min-width: 120px;
+  flex: 1;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1.5px solid #ececec;
+}
+.admin-card:hover {
+  box-shadow: 0 6px 24px #0002;
+  transform: translateY(-4px) scale(1.03);
+  border-color: #d35400;
+}
+.admin-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.1em;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+.admin-card p {
+  font-size: 2.1em;
+  margin: 0;
+  color: #d35400;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.admin-filtros {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #fafafa;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #0001;
+}
+.admin-filtros label {
+  font-weight: 500;
+  margin-right: 8px;
+  color: #222;
+}
+.admin-filtros select, .admin-filtros input[type="date"] {
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  padding: 4px 8px;
+  background: #fff;
+  color: #222;
+}
+.admin-filtros button {
+  background: #d35400;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.admin-filtros button:hover {
+  background: #b34700;
+}
+
+.admin-graficos {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.admin-grafico-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 18px 28px 10px 28px;
+  min-width: 320px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid #ececec;
+}
+.admin-grafico-card h4 {
+  margin: 0 0 12px 0;
+  font-size: 1.1em;
+  color: #d35400;
+  letter-spacing: 0.5px;
+}
+.admin-grafico-vazio {
+  color: #888;
+  font-size: 1em;
+  margin-top: 40px;
+}
+
+.admin-tabela-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 18px 28px;
+  margin-bottom: 32px;
+  border: 1.5px solid #ececec;
+}
+.admin-tabela-box h3 {
+  margin: 0 0 12px 0;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+.admin-tabela-scroll {
+  overflow-x: auto;
+}
+.admin-tabela-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+  background: #fff;
+}
+.admin-tabela-box th, .admin-tabela-box td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #f2f2f2;
+  text-align: left;
+}
+.admin-tabela-box th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #d35400;
+}
+.admin-tabela-box tr:hover {
+  background: #fff6ed;
+}
+
+@media (max-width: 900px) {
+  .admin-graficos {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .admin-grafico-card {
+    min-width: 0;
+    width: 100%;
+  }
+}

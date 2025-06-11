@@ -17,6 +17,7 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mercadopago": "^2.6.0",
+    "multer": "^2.0.1",
     "mysql": "^2.18.1",
     "mysql2": "^3.14.1",
     "node-fetch": "^2.7.0"

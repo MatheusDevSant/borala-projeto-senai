@@ -3,7 +3,49 @@ const router = express.Router();
 const conexao = require('../configuracoes/banco');
 
 router.post('/cadastrar', async (req, res) => {
-  const { nome_evento, id_categoria, id_local_evento, data_evento, id_cidade, id_estado, preco } = req.body;
+  let { nome_evento, id_categoria, categoria_nome, id_local_evento, data_evento, id_cidade, id_estado, preco } = req.body;
+
+  // Validação dos campos obrigatórios (debug extra)
+  if (!nome_evento || !id_categoria || !id_local_evento || !data_evento || !id_cidade || !id_estado) {
+    console.error('❌ Dados obrigatórios ausentes:', req.body);
+    return res.status(400).json({ erro: 'Dados obrigatórios ausentes para cadastro de evento.' });
+  }
+
+  // Verifique se a cidade realmente existe no banco antes de tentar inserir
+  try {
+    const [cidadeRows] = await conexao.promise().query(
+      'SELECT id_cidade FROM cidades WHERE id_cidade = ? AND id_estado = ? LIMIT 1',
+      [id_cidade, id_estado]
+    );
+    if (cidadeRows.length === 0) {
+      console.error(`❌ Cidade/Estado não encontrados no banco para cadastro de evento: id_cidade=${id_cidade}, id_estado=${id_estado}`);
+      return res.status(400).json({ erro: 'Cidade/Estado não encontrados no banco.' });
+    }
+  } catch (err) {
+    console.error('❌ Erro ao validar cidade/estado:', err);
+    return res.status(500).json({ erro: 'Erro ao validar cidade/estado.' });
+  }
+
+  // Mapeamento de nome para id_categoria
+  if (!id_categoria && categoria_nome) {
+    // Exemplo simples, ajuste conforme suas categorias
+    const categoriasMap = {
+      'Sports': 1,
+      'Esporte': 1,
+      'Music': 2,
+      'Música': 2,
+      'Palestra': 3,
+      'Workshop': 4,
+      'Oficina': 4
+    };
+    id_categoria = categoriasMap[categoria_nome] || 1; // Default para Esporte se não encontrar
+  }
+
+  // Validação dos campos obrigatórios
+  if (!nome_evento || !id_categoria || !id_local_evento || !data_evento || !id_cidade || !id_estado) {
+    return res.status(400).json({ erro: 'Dados obrigatórios ausentes para cadastro de evento.' });
+  }
+
   try {
     // Verifica se já existe
     const [existe] = await conexao.promise().query(

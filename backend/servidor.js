@@ -56,6 +56,17 @@ app.use('/api/momentos', momentosRota);
 const eventosExternosRota = require('./rotas/eventosExternosRota');
 app.use('/api/eventos-externos', eventosExternosRota);
 
+// Admin Rota
+const adminRota = require('./rotas/adminRota');
+app.use('/api/admin', adminRota);
+
 // Porta
 const PORTA = process.env.PORTA || 3001;
 app.listen(PORTA, () => console.log(`Servidor rodando na porta ${PORTA}`));
+
+
+// Exportando a rota de fotos
+const uploadFotoRota = require('./rotas/uploadFotoRota');
+app.use('/api/upload-foto', uploadFotoRota);
+
+app.use('/images', express.static('public/images'));
